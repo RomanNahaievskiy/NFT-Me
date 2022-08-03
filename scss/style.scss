@@ -248,9 +248,7 @@ body{
     }
 }
 .galery {
-    .container{
-        overflow: visible;
-    }
+    
     width: 100%;
     background-color: #262627;
     position: relative;
@@ -282,7 +280,7 @@ body{
     }
     &__row-2:hover{
         margin-right:0px ;
-        margin-left: -130px;
+        margin-left: -190px;
         transition-duration: 1.2s;
     }
     &__item{

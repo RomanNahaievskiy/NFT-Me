@@ -315,10 +315,6 @@ body {
   position: relative;
 }
 
-.galery .container {
-  overflow: visible;
-}
-
 .galery__row-1 {
   width: 1584px;
   margin-left: -160px;
@@ -349,7 +345,7 @@ body {
 
 .galery__row-2:hover {
   margin-right: 0px;
-  margin-left: -130px;
+  margin-left: -190px;
   -webkit-transition-duration: 1.2s;
           transition-duration: 1.2s;
 }
