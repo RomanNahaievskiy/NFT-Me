@@ -45,13 +45,15 @@ body{
 }
 
 .wrapper {
-    
+    display: flex;
+    flex-direction: column;
     
 }
 .container {
-    max-width: 1180px;
-    padding: 0 10px;
+    max-width: 1200px;
+    padding: 0px ;
     margin: 0 auto;
+    overflow: hidden;
 }
 // Header
 
@@ -65,8 +67,7 @@ body{
 		// .header__body
 
 		&__body {
-            margin: 0 auto;
-            width: 100%;
+            max-width: 100%;
             height: 60px;
             padding: 0;
             display: flex;
@@ -84,7 +85,7 @@ body{
 		&__logo {
             width: 60px;
             height: 60px;
-            background-color: gray;
+            background-color: #262627;
             margin-right: 48px;
 		}
 
@@ -136,13 +137,18 @@ body{
 }
 
 .about{
+    width: 100%;
+    margin: 0 auto;
     position: relative;
     background-color: #0D0D0E;
+    
+    
     &__image img{
-        max-width: 100%;
+
+        right: 0px;
     }
     &__image{
-        max-width: 55%;
+        max-width: 51.38%;
         position: absolute;
         top: 0;
         right: 0;
@@ -163,10 +169,11 @@ body{
             &__title{
             font-family:'Paytone One', sans-serif;
             font-size: 84px;
+            line-height: 100px;
             }
             &__text{
                 padding-top: 22px;
-                margin-bottom: 99px;
+                margin-bottom: 100px;
                 font-size: 20px;
                 line-height: 32px;
             }
@@ -175,9 +182,14 @@ body{
     &__btn{
         width: 752px;
         height: 120px;
+        background-color: #262627;
+        padding-right: 214px;
         text-align: center;
         position: relative;
-        margin-left: -52px;
+        margin-left: -311px;
+        margin-top: 8px;
+        transition-duration: 1.2s;
+        z-index: 0;
         a{
             display: block;
             width: 100%;
@@ -188,12 +200,127 @@ body{
             font-size: 32px;
             line-height: 44px;
             align-items: center;
-            justify-content: space-around;
+            justify-content:flex-end
             
+        }
+        .about__btn-icon{
+            width: 42px;
+            margin: 13px;
         }
     }
     &__btn:hover{
-        margin-left: 0px;
+        margin-left: -52px;
+        transition-duration: 2.2s;
     }
 
+}
+.statistic{
+    width: 100%;
+    height: 490px;
+    background-color: #262627;
+    display: flex;
+    align-items: center;
+    &__body{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__item{
+        flex: 0 1 510px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+    
+    
+    .numbers-info{
+        flex: 0 1 510px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+
+        .number{
+            font-family: 'Paytone One', sans-serif;
+            font-size: 56px;
+            line-height: 56px;
+            margin-bottom: 11px;
+            
+        }
+    }
+}
+.galery {
+    .container{
+        overflow: visible;
+    }
+    width: 100%;
+    background-color: #262627;
+    position: relative;
+
+    // .galery__row-1
+
+    &__row-1 {
+        width: 1584px;
+        margin-left: -160px;
+        display: flex;
+        padding: 16px 0px;
+        transition-duration: 3.2s;
+        
+    }
+    &__row-1:hover{
+        margin-left: 0px;
+        transition-duration: 1.2s;
+    }
+
+    // .galery__row-2
+
+    &__row-2 {
+        width: 1584px;
+        margin-right: -145px;
+        display: flex;
+        padding: 16px 0px;
+        transition-duration: 3.2s;
+        
+    }
+    &__row-2:hover{
+        margin-right:0px ;
+        margin-left: -130px;
+        transition-duration: 1.2s;
+    }
+    &__item{
+        padding: 24px;
+    }
+}
+
+.create-nft {
+
+    // .create-nft__title
+
+    &__title {
+    }
+
+    // .create-nft__row
+
+    &__row {
+    }
+
+    // .create-nft__item
+
+    &__item {
+    }
+}
+.trending-weak {
+
+    // .trending-weak__body
+
+    &__body {
+    }
+
+    // .trending-weak__column
+
+    &__column {
+    }
+
+    // .trending-weak__item
+
+    &__item {
+    }
 }
