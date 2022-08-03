@@ -322,8 +322,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 16px 0px;
-  -webkit-transition-duration: 3.2s;
-          transition-duration: 3.2s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .galery__row-1:hover {
@@ -346,10 +346,24 @@ body {
 .galery__row-2:hover {
   margin-right: 0px;
   margin-left: -190px;
-  -webkit-transition-duration: 1.2s;
-          transition-duration: 1.2s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
 }
 
 .galery__item {
   padding: 24px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.galery__item:hover {
+  padding-top: 0px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
