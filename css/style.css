@@ -182,7 +182,7 @@ body {
   height: 120px;
   text-align: center;
   position: relative;
-  margin-left: -57px;
+  margin-left: -52px;
 }
 .about__btn a {
   display: block;
@@ -195,4 +195,7 @@ body {
   line-height: 44px;
   align-items: center;
   justify-content: space-around;
+}
+.about__btn:hover {
+  margin-left: 0px;
 }

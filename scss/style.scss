@@ -177,7 +177,7 @@ body{
         height: 120px;
         text-align: center;
         position: relative;
-        margin-left: -57px;
+        margin-left: -52px;
         a{
             display: block;
             width: 100%;
@@ -191,7 +191,9 @@ body{
             justify-content: space-around;
             
         }
-
+    }
+    &__btn:hover{
+        margin-left: 0px;
     }
 
 }
