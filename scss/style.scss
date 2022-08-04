@@ -136,6 +136,7 @@ body{
 }
 
 .about{
+    width: 100%;
     position: relative;
     background-color: #0D0D0E;
     &__image img{
@@ -151,7 +152,7 @@ body{
     .block{
         width: 658px;
         height: 100%;
-        padding-top: 72px;
+        padding: 132px;
         font-size: 24px;
         color: #ffffff;
         position: relative;
@@ -159,10 +160,12 @@ body{
         
     
         .title{
+            
             width: 658px;
             &__title{
             font-family:'Paytone One', sans-serif;
             font-size: 84px;
+            line-height: 100px;
             }
             &__text{
             
