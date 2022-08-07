@@ -1,549 +1,781 @@
 /*null style*/
 * {
-  padding: 0;
-  margin: 0;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-*, *:before, *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-:focus, :active {
-  outline: none;
+:focus,
+:active {
+    outline: none;
 }
 
-a:focus, a:active {
-  outline: none;
+a:focus,
+a:active {
+    outline: none;
 }
 
-nav, footer, header, aside {
-  display: block;
+nav,
+footer,
+header,
+aside {
+    display: block;
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
-  font-family: inherit;
+input,
+button,
+textarea {
+    font-family: inherit;
 }
 
 input::-ms-clear {
-  display: none;
+    display: none;
 }
 
 button {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 }
 
-a, a:visited {
-  text-decoration: none;
+a,
+a:visited {
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 ul li {
-  list-style: none;
+    list-style: none;
 }
 
 img {
-  vertical-align: top;
+    vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
 }
 
 /*--------------------*/
 body {
-  width: 100%;
-  height: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #ffffff;
+    width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #ffffff;
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .container {
-  max-width: 1200px;
-  padding: 0px;
-  margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px;
+    margin: 0 auto;
 }
 
 .header {
-  width: 100%;
-  padding: 6px 0px;
-  position: fixed;
-  z-index: 50;
+    width: 100%;
+    padding: 6px 0px;
+    position: fixed;
+    z-index: 50;
 }
 
 .header__body {
-  max-width: 100%;
-  height: 60px;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    max-width: 100%;
+    height: 60px;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .header__logo img {
-  display: block;
-  width: 60px;
+    display: block;
+    width: 60px;
 }
 
 .header__logo {
-  width: 60px;
-  height: 60px;
-  background-color: #262627;
-  margin-right: 48px;
+    width: 60px;
+    height: 60px;
+    background-color: #262627;
+    margin-right: 48px;
 }
 
 .header__burger {
-  display: none;
+    display: none;
 }
 
 .header__menu {
-  width: auto;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: auto;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .header__menu li {
-  display: inline-block;
-  margin-right: 36px;
-  font-size: 18px;
-  line-height: 20px;
+    display: inline-block;
+    margin-right: 36px;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .header__link {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .header__bth-buy {
-  width: 215px;
-  height: 40px;
-  padding-top: 8px;
-  background-color: #D400B3;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  text-align: center;
-  font-family: 'Paytone One', sans-serif;
-  font-size: 18px;
-  line-height: 20px;
+    width: 215px;
+    height: 40px;
+    padding-top: 8px;
+    background-color: #d400b3;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    text-align: center;
+    font-family: "Paytone One", sans-serif;
+    font-size: 18px;
+    line-height: 20px;
 }
 
 .header__bth-buy .text-btn {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .about {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-color: #0D0D0E;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #0d0d0e;
 }
 
 .about__image img {
-  right: 0px;
+    right: 0px;
 }
 
 .about__image {
-  max-width: 51.38%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
+    max-width: 51.38%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .about .block {
-  width: 658px;
-  height: 100%;
-  padding-top: 132px;
-  font-size: 24px;
-  color: #ffffff;
-  position: relative;
-  z-index: 2;
+    width: 658px;
+    height: 100%;
+    padding-top: 132px;
+    font-size: 24px;
+    color: #ffffff;
+    position: relative;
+    z-index: 2;
 }
 
 .about .block .title {
-  width: 658px;
+    width: 658px;
 }
 
 .about .block .title__title {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 84px;
-  line-height: 100px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 84px;
+    line-height: 100px;
 }
 
 .about .block .title__text {
-  padding-top: 22px;
-  margin-bottom: 100px;
-  font-size: 20px;
-  line-height: 32px;
+    padding-top: 22px;
+    margin-bottom: 100px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .about__btn {
-  width: 752px;
-  height: 120px;
-  background-color: #262627;
-  padding-right: 214px;
-  text-align: center;
-  position: relative;
-  margin-left: -311px;
-  margin-top: 8px;
-  -webkit-transition-duration: 1.2s;
-          transition-duration: 1.2s;
-  z-index: 0;
+    width: 752px;
+    height: 120px;
+    background-color: #262627;
+    padding-right: 214px;
+    text-align: center;
+    position: relative;
+    margin-left: -311px;
+    margin-top: 8px;
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
+    z-index: 0;
 }
 
 .about__btn a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  color: #ffffff;
-  font-family: 'Paytone One', sans-serif;
-  font-size: 32px;
-  line-height: 44px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #ffffff;
+    font-family: "Paytone One", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
 }
 
 .about__btn .about__btn-icon {
-  width: 42px;
-  margin: 13px;
+    width: 42px;
+    margin: 13px;
 }
 
 .about__btn:hover {
-  margin-left: -52px;
-  -webkit-transition-duration: 2.2s;
-          transition-duration: 2.2s;
+    margin-left: -52px;
+    -webkit-transition-duration: 2.2s;
+    transition-duration: 2.2s;
 }
 
 .statistic {
-  width: 100%;
-  height: 490px;
-  background-color: #262627;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    width: 100%;
+    height: 490px;
+    background-color: #262627;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .statistic__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .statistic__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 510px;
-          flex: 0 1 510px;
-  font-size: 20px;
-  line-height: 32px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 510px;
+    flex: 0 1 510px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .statistic .numbers-info {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 510px;
-          flex: 0 1 510px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 510px;
+    flex: 0 1 510px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    text-align: center;
 }
 
 .statistic .numbers-info .number {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 56px;
-  line-height: 56px;
-  margin-bottom: 11px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 11px;
 }
 
 .galery {
-  width: 100%;
-  background-color: #262627;
-  position: relative;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #262627;
+    position: relative;
+    overflow: auto;
 }
 
 .galery__row-1 {
-  width: 1584px;
-  margin-left: -160px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 0px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+    width: 1584px;
+    margin-left: -160px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 0px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .galery__row-1:hover {
-  margin-left: 0px;
-  -webkit-transition-duration: 1.2s;
-          transition-duration: 1.2s;
+    margin-left: 0px;
+    -webkit-transition-duration: 1.2s;
+    transition-duration: 1.2s;
 }
 
 .galery__row-2 {
-  width: 1584px;
-  margin-right: -145px;
-  margin-bottom: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 0px;
-  -webkit-transition-duration: 3.2s;
-          transition-duration: 3.2s;
+    width: 1584px;
+    margin-right: -145px;
+    margin-bottom: 150px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 0px;
+    -webkit-transition-duration: 3.2s;
+    transition-duration: 3.2s;
 }
 
 .galery__row-2:hover {
-  margin-right: 0px;
-  margin-left: -190px;
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+    margin-right: 0px;
+    margin-left: -190px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
 .galery__item {
-  padding: 24px;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+    padding: 24px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
 }
 
 .galery__item:hover {
-  padding-top: 0px;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition-delay: 1s;
-          transition-delay: 1s;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+    padding-top: 0px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .create-nft {
-  background-color: #0D0D0E;
+    background-color: #0d0d0e;
 }
 
 .create-nft__title {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 52px;
-  line-height: 64px;
-  text-align: center;
-  margin-top: 175px;
-  margin-bottom: 15px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    margin-top: 175px;
+    margin-bottom: 15px;
 }
 
 .create-nft__row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 38px;
-  padding-bottom: 10px;
-  margin: 0 -18px 175px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 38px;
+    padding-bottom: 10px;
+    margin: 0 -18px 175px;
 }
 
 .create-nft__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 33%;
-          flex: 1 1 33%;
-  border: 1px solid #E5E5E580;
-  height: 275px;
-  margin: 0 5px 0 5px;
-  background-color: #262627;
-  padding-left: 17px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33%;
+    flex: 1 1 33%;
+    border: 1px solid #e5e5e580;
+    height: 275px;
+    margin: 0 5px 0 5px;
+    background-color: #262627;
+    padding-left: 17px;
 }
 
 .create-nft__item .gray-circle {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  background-color: #c4c4c4;
-  margin-top: 47px;
-  margin-bottom: 25px;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+    margin-top: 47px;
+    margin-bottom: 25px;
 }
 
 .create-nft__item .gray-circle::after {
-  content: '';
-  display: inline-block;
-  border: 1px solid #c4c4c4;
-  width: 124.45px;
-  height: 0px;
-  position: relative;
-  left: 265px;
-  top: -14px;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+    content: "";
+    display: inline-block;
+    border: 1px solid #c4c4c4;
+    width: 124.45px;
+    height: 0px;
+    position: relative;
+    left: 265px;
+    top: -14px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .create-nft__item .row__title {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 23px;
-  line-height: 32px;
-  margin-bottom: 11px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 11px;
 }
 
 .create-nft__item .row__text {
-  font-size: 16px;
-  line-height: 26px;
-  max-width: 305px;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 305px;
 }
 
 .trending-weak__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -43.2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 -43.2px;
 }
 
 .trending-weak__column-2 {
-  margin-top: 65px;
+    margin-top: 65px;
 }
 
 .trending-weak__column {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 38.6%;
-          flex: 1 1 38.6%;
-  padding: 0 43.2px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 38.6%;
+    flex: 1 1 38.6%;
+    padding: 0 43.2px;
 }
 
 .trending-weak__column img {
-  width: 100%;
+    width: 100%;
 }
 
 .trending-weak__column .title {
-  margin-bottom: 77px;
+    margin-bottom: 77px;
 }
 
 .trending-weak__column .title .title__title {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 52px;
-  line-height: 64px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 52px;
+    line-height: 64px;
 }
 
 .trending-weak__column .title .title__text {
-  font-size: 20px;
-  line-height: 32px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .trending-weak__item {
-  padding-bottom: 80px;
+    padding-bottom: 80px;
 }
 
 .trending-weak__item .name-artist {
-  font-family: 'Paytone One', sans-serif;
-  font-size: 31px;
-  line-height: 44px;
-  margin-top: 19px;
-  margin-bottom: 7px;
+    font-family: "Paytone One", sans-serif;
+    font-size: 31px;
+    line-height: 44px;
+    margin-top: 19px;
+    margin-bottom: 7px;
 }
 
 .trending-weak__item .album {
-  font-size: 16px;
-  line-height: 20px;
-  margin-bottom: 12px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .trending-weak__item .album .name {
-  display: inline-block;
+    display: inline-block;
 }
 
 .trending-weak__item .album .price {
-  display: inline-block;
-  color: #D400B3;
+    display: inline-block;
+    color: #d400b3;
 }
 
 .trending-weak__item .watermark {
-  display: block;
-  width: 150px;
-  height: 150px;
-  position: relative;
-  z-index: 3;
-  margin-top: -190px;
-  margin-left: 366.81px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    z-index: 3;
+    margin-top: -190px;
+    margin-left: 366.81px;
 }
 
 .trending-weak .button-space {
-  text-align: right;
-  padding: 42px 0 0 0;
-}
-
-.trending-weak .button-space .button-view {
-  display: inline-block;
-  width: 204px;
-  height: 82px;
-  font-family: 'Paytone One', sans-serif;
-  color: #D400B3;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: left;
+    text-align: right;
+    padding: 42px 0 0 0;
 }
 
 .trending-weak .button-space .button-marketplace__icon {
-  width: 20px;
+    width: 20px;
 }
 
 .trending-weak .button-space .button-marketplace__icon img {
-  width: 100%;
+    width: 100%;
+}
+
+.artists {
+    background-color: #262627;
+}
+
+.artists__header {
+    width: 100%;
+    height: 180px;
+}
+
+.artists .artists-header__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.artists .left-side {
+    height: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 55%;
+    flex: 1 1 55%;
+    padding: 52px 221px 0 206px;
+}
+
+.artists .button-all-artists {
+    width: 300px;
+    height: 82px;
+}
+
+.artists .some-text {
+    padding-top: 5px;
+    width: 265px;
+    height: 30px;
+    overflow: hidden;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.artists .right-side {
+    width: 45%;
+    height: 180px;
+    background-color: #0d0d0e;
+    text-align: center;
+    padding: 58px 0px;
+}
+
+.artists .caption-animation {
+    font-family: "Paytone One", sans-serif;
+    font-size: 52px;
+    line-height: 64px;
+    padding: 5px 0;
+}
+
+.artists .button-view {
+    display: inline-block;
+    width: 204px;
+    height: 82px;
+    font-family: "Paytone One", sans-serif;
+    color: #d400b3;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: left;
+}
+
+.artists__row {
+    padding: 160px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 -8px;
+}
+
+.artists__item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33%;
+    flex: 1 1 33%;
+    height: 374px;
+    margin: 0 8px;
+    padding-top: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Paytone One", sans-serif;
+    font-size: 32px;
+    line-height: 44px;
+}
+
+.artists__item_1 {
+    background: url("../img/backgrounds/IMAGEworkbackground1.png") no-repeat;
+}
+
+.artists__item_2 {
+    background: url("../img/backgrounds/IMAGEworkbackground2.png") no-repeat;
+}
+
+.artists__item_3 {
+    background: url("../img/backgrounds/IMAGEworkbackground3.png") no-repeat;
+}
+
+.artists__picture {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 19px;
+}
+
+.artists__name-artist {
+    margin-bottom: 31px;
+}
+
+.artists__button-follow {
+    width: 143px;
+    height: 40px;
+    background-color: #d400b3;
+    font-size: 18px;
+    line-height: 20px;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.backed {
+    position: relative;
+    background-color: #0d0d0e;
+    text-align: center;
+    padding-top: 160px;
+}
+
+.backed__title {
+    font-family: "Paytone One", sans-serif;
+    font-size: 52px;
+    line-height: 64px;
+}
+
+.backed__text {
+    width: 591px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 97px;
+}
+
+.backed__brands {
+    margin: 0 auto;
+    width: 840px;
+    height: 214.81px;
+    margin-bottom: 300.19px;
+    position: relative;
+    z-index: 2;
+}
+
+.backed__picture {
+    position: absolute;
+    top: 350px;
+    left: 30.7%;
+    z-index: 0;
+}
+
+.backed__newer-miss {
+    padding: 179.81px 70px 0px;
+    background-color: #262627;
+    margin-bottom: 100px;
+}
+
+.backed__newer-miss::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: relative;
+
+    background-color: #d400b3;
+}
+
+.brands__item {
+    text-align: center;
+    padding: 44px;
+    width: 341px;
+    height: 118px;
+    background-color: rgba(196, 196, 196, 0.2);
+    border: 1px solid rgba(229, 229, 229, 0.3);
+}
+
+.fox-hub {
+    position: absolute;
+    top: -30px;
+    left: -4.29%;
+}
+
+.nirastate {
+    position: absolute;
+    top: 123px;
+    left: -4.29%;
+}
+
+.hexlab {
+    position: absolute;
+    top: -30px;
+    right: -4.29%;
+}
+
+.zootv {
+    position: absolute;
+    top: 123px;
+    right: -4.29%;
+}
+
+.lightai {
+    position: absolute;
+    top: 44px;
+    left: 29.64%;
+    right: 29.76%;
 }
