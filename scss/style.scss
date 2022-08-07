@@ -47,6 +47,7 @@ body{
 .wrapper {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     
 }
 .container {
@@ -98,6 +99,7 @@ body{
 		// .header__menu
 
 		&__menu {
+            background-color: black;
             width: auto;
             height: 100%;
             display: flex;
@@ -165,6 +167,7 @@ body{
         
     
         .title{
+            
             width: 658px;
             
             &__title{
@@ -260,15 +263,16 @@ body{
 
     &__row-1 {
         width: 1584px;
-        margin-left: -160px;
+        margin-right: 145px;
         display: flex;
         padding: 16px 0px;
-        transition-duration: 0.4s;
+        transition-duration: 3.2s;
         
     }
     &__row-1:hover{
-        margin-left: 0px;
-        transition-duration: 1.2s;
+        margin-right:0px ;
+        margin-left: 190px;
+        transition-duration: 0.4s;
     }
 
     // .galery__row-2
