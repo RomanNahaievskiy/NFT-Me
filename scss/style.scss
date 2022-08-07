@@ -53,7 +53,7 @@ body{
     max-width: 1200px;
     padding: 0px ;
     margin: 0 auto;
-    overflow: hidden;
+    
 }
 // Header
 
@@ -166,6 +166,7 @@ body{
     
         .title{
             width: 658px;
+            
             &__title{
             font-family:'Paytone One', sans-serif;
             font-size: 84px;
@@ -273,6 +274,7 @@ body{
     &__row-2 {
         width: 1584px;
         margin-right: -145px;
+        margin-bottom: 150px;
         display: flex;
         padding: 16px 0px;
         transition-duration: 3.2s;
@@ -280,7 +282,7 @@ body{
     }
     &__row-2:hover{
         margin-right:0px ;
-        margin-left: -190px;
+        margin-left: -190px;        
         transition-duration: 0.4s;
     }
     &__item{
@@ -297,20 +299,72 @@ body{
 }
 
 .create-nft {
+    background-color: #0D0D0E;
 
     // .create-nft__title
 
     &__title {
+        font-family:'Paytone One', sans-serif;
+        font-size: 52px;
+        line-height: 64px;
+        text-align: center;
+        margin-top: 175px;
+        margin-bottom: 15px;
     }
 
     // .create-nft__row
 
     &__row {
+        display: flex;
+        padding-top: 38px;
+        padding-bottom: 10px;
+        margin:0 -18px 175px;
+
     }
 
     // .create-nft__item
 
     &__item {
+        flex: 1 1 33%;
+        border: 1px solid #E5E5E580;
+        height: 275px;
+        margin: 0 5px 0 5px;
+        background-color: #262627;
+        padding-left: 17px;
+
+        .gray-circle{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color:#c4c4c4  ;
+            margin-top: 47px;
+            margin-bottom: 25px;
+        }
+        .gray-circle::after{
+            content: '';
+            display: inline-block;
+            border: 1px solid #c4c4c4;
+            width: 124.45px;
+            height: 0px;
+            position: relative;
+            left: 265px;
+            top: -14px;
+            transform: rotate(45deg);
+        }
+        .row__title{
+            font-family:'Paytone One', sans-serif;
+            font-size: 23px;
+            line-height: 32px;
+            margin-bottom: 11px;
+
+
+        }
+        .row__text{
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 305px;
+        }
     }
 }
 .trending-weak {
@@ -318,15 +372,140 @@ body{
     // .trending-weak__body
 
     &__body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 -43.2px;
     }
 
     // .trending-weak__column
+    &__column-1{
 
-    &__column {
     }
+    &__column-2{
+        margin-top: 65px;
 
+    }
+    &__column {
+        flex: 1 1 38.6%;
+        padding: 0 43.2px;
+        img{
+            width: 100%;
+        }
+        .title{
+            margin-bottom: 77px;
+            .title__title{  
+                font-family:'Paytone One', sans-serif;
+                font-size: 52px;
+                line-height: 64px;
+            }   
+            .title__text{
+                font-size: 20px;
+                line-height: 32px;
+
+            }     
+        }
+    }
+    
     // .trending-weak__item
 
     &__item {
+        padding-bottom: 80px;
+        .name-artist{
+            font-family:'Paytone One', sans-serif;
+            font-size: 31px;
+            line-height: 44px;
+            margin-top: 19px;
+            margin-bottom: 7px;
+
+        }
+        .album{
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            .name{
+                display: inline-block;
+            }
+            .price{
+                display: inline-block;
+                color:#D400B3 ;
+            }
+        }
+        .watermark{
+            display: block;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            z-index: 3;
+            margin-top: -190px;
+            margin-left:366.81px ;
+            // position: relative;
+            // bottom: 190px;
+            // left: 65%;
+        }
     }
+    .button-space{text-align:right;
+        padding: 42px 0 0 0 ;
+    .button-view{
+        display: inline-block;
+        width: 204px;
+        height: 82px;
+        font-family:'Paytone One', sans-serif;
+        color: #D400B3;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: left;
+    }
+    .button-marketplace {
+        
+		// .button-marketplace__icon
+
+		&__icon {
+            width: 20px;
+            img{
+                width: 100%;
+            }
+		}
+
+		// .button-marketplace__text
+
+		&__text {
+
+		}
+}
+
+}
+}
+.artists {
+
+    // .artists__header
+
+    &__header {
+    }
+}
+.artists-header {
+
+    // .artists-header__body
+
+    &__body {
+    }
+}
+.left-side {
+}
+.button-view {
+}
+.button-all-artists {
+
+    // .button-all-artists__icon
+
+    &__icon {
+    }
+}
+.text {
+}
+.right-side {
+}
+.caption-animation {
 }
