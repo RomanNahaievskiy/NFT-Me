@@ -142,8 +142,7 @@ body{
     width: 100%;
     margin: 0 auto;
     position: relative;
-    background-color: red;
-    
+    background-color: #0D0D0E;
     
     &__image img{
 
@@ -154,7 +153,7 @@ body{
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: 2;
     }
     .block{
         width: 658px;
